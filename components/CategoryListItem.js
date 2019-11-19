@@ -7,9 +7,10 @@ import{
     StyleSheet
 } from 'react-native'
 // dung function components ta se dung export default
-export default function CategoryListItem() {
+export default function CategoryListItem(props) {
+    const {category} =  props;
     return <View style={styles.container}>
-       <Text style={styles.title}>CategoryListItem</Text>
+       <Text style={styles.title}>{category.name}</Text>
         <Image style={styles.categoryImage} source={medicine}/>
     </View>
 
@@ -38,7 +39,7 @@ const  styles = StyleSheet.create({
      // shadowOpacity: 0.25,
      // shadowRadius: 3.84,
 
-     elevation: 5,
+     elevation: 3,
      marginBottom: 16
 
 
