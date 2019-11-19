@@ -12,6 +12,7 @@ import CategoryListItem from './components/CategoryListItem';
 //horizontal={true} la thanh cuon ngang
 // <ScrollView horizontal={true}>
 //FlatList
+//Even handing
 import {
   SafeAreaView,
   StyleSheet,

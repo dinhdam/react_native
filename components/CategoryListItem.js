@@ -1,18 +1,27 @@
 import React from 'react';
 import medicine from '../assets/medicine.png'
-import{
+import {
     Image,
     Text,
     View,
-    StyleSheet
-} from 'react-native'
+    StyleSheet,
+    TouchableOpacity,
+    Alert
+    //lay tay cham vao dc
+} from 'react-native';
+
 // dung function components ta se dung export default
 export default function CategoryListItem(props) {
     const {category} =  props;
-    return <View style={styles.container}>
+    return<TouchableOpacity onPress={()=>
+    {
+     Alert.alert('click')
+    }}>
+    <View style={styles.container}>
        <Text style={styles.title}>{category.name}</Text>
         <Image style={styles.categoryImage} source={medicine}/>
     </View>
+    </TouchableOpacity>
 
 
 
